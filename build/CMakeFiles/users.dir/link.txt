@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libusers.so -o libusers.so CMakeFiles/users.dir/connmgr.c.o CMakeFiles/users.dir/datamgr.c.o CMakeFiles/users.dir/sensor_db.c.o  -Wl,-rpath,"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build/lib" lib/libvector.so lib/libtcpsock.so -lsqlite3 

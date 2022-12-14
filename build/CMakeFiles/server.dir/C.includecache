@@ -1,0 +1,98 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/config.h
+assert.h
+-
+malloc.h
+-
+stdbool.h
+-
+stdint.h
+-
+time.h
+-
+
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/connmgr.h
+config.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/config.h
+lib/tcpsock.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/lib/tcpsock.h
+sbuffer.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sbuffer.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+unistd.h
+-
+
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/datamgr.h
+config.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/config.h
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/lib/tcpsock.h
+stdbool.h
+-
+time.h
+-
+
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/main.c
+config.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/config.h
+connmgr.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/connmgr.h
+datamgr.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/datamgr.h
+sbuffer.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sbuffer.h
+sensor_db.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sensor_db.h
+assert.h
+-
+fcntl.h
+-
+pthread.h
+-
+stdarg.h
+-
+stdio.h
+-
+stdlib.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+wait.h
+-
+
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sbuffer.h
+config.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/config.h
+
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sensor_db.h
+config.h
+/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/config.h
+sqlite3.h
+-
+stdio.h
+-
+stdlib.h
+-
+

@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build",
+  "command": "/usr/bin/cc     -O2 -Wall -Wextra -ggdb -o CMakeFiles/sensor.dir/sensor_node.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sensor_node.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sensor_node.c"
+},
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build",
+  "command": "/usr/bin/cc     -O2 -Wall -Wextra -ggdb -o CMakeFiles/server.dir/main.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/main.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/main.c"
+},
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build",
+  "command": "/usr/bin/cc -Dsbuffer_EXPORTS  -fPIC   -O2 -Wall -Wextra -ggdb -o CMakeFiles/sbuffer.dir/sbuffer.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sbuffer.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sbuffer.c"
+},
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build",
+  "command": "/usr/bin/cc -Dusers_EXPORTS  -fPIC   -O2 -Wall -Wextra -ggdb -o CMakeFiles/users.dir/connmgr.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/connmgr.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/connmgr.c"
+},
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build",
+  "command": "/usr/bin/cc -Dusers_EXPORTS  -fPIC   -O2 -Wall -Wextra -ggdb -o CMakeFiles/users.dir/datamgr.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/datamgr.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/datamgr.c"
+},
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build",
+  "command": "/usr/bin/cc -Dusers_EXPORTS  -fPIC   -O2 -Wall -Wextra -ggdb -o CMakeFiles/users.dir/sensor_db.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sensor_db.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/sensor_db.c"
+},
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build/lib",
+  "command": "/usr/bin/cc -Dtcpsock_EXPORTS  -fPIC   -O2 -Wall -Wextra -ggdb -o CMakeFiles/tcpsock.dir/tcpsock.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/lib/tcpsock.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/lib/tcpsock.c"
+},
+{
+  "directory": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/build/lib",
+  "command": "/usr/bin/cc -Dvector_EXPORTS  -fPIC   -O2 -Wall -Wextra -ggdb -o CMakeFiles/vector.dir/vector.c.o   -c \"/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/lib/vector.c\"",
+  "file": "/mnt/d/Documents/school/industriele-inginieurwetenschappen/fase 3/semister 1/Besturingssystemen 2/labo 5/OS2_labo5/lib/vector.c"
+}
+]
