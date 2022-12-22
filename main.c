@@ -21,6 +21,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <wait.h>
+#include <math.h>
 
 static int print_usage() {
     printf("Usage: <command> <port number> \n");
@@ -32,22 +33,16 @@ static void* datamgr_run(void* buffer) {
 
     // datamgr loop
     while (true) {
-        sbuffer_lock(buffer);
-        if (!sbuffer_is_empty(buffer)) {
-            sensor_data_t data = sbuffer_remove_last(buffer);
+        sensor_data_t data = sbuffer_remove_last(buffer);
+        if(data.value != -INFINITY){
             datamgr_process_reading(&data);
-            // everything nice & processed
-        } else if (sbuffer_is_closed(buffer)) {
+        }
+        else if (sbuffer_is_closed(buffer)) {
             // buffer is both empty & closed: there will never be data again
-            sbuffer_unlock(buffer);
             break;
         }
-        // give the others a chance to lock the mutex
-        sbuffer_unlock(buffer);
     }
-
     datamgr_free();
-
     return NULL;
 }
 
@@ -57,20 +52,15 @@ static void* storagemgr_run(void* buffer) {
 
     // storagemgr loop
     while (true) {
-        sbuffer_lock(buffer);
-        if (!sbuffer_is_empty(buffer)) {
-            sensor_data_t data = sbuffer_remove_last(buffer);
+        sensor_data_t data = sbuffer_remove_last(buffer);
+        if(data.value != -INFINITY){
             storagemgr_insert_sensor(db, data.id, data.value, data.ts);
-            // everything nice & processed
-        } else if (sbuffer_is_closed(buffer)) {
+        }
+        else if (sbuffer_is_closed(buffer)) {
             // buffer is both empty & closed: there will never be data again
-            sbuffer_unlock(buffer);
             break;
         }
-        // give the others a chance to lock the mutex
-        sbuffer_unlock(buffer);
     }
-
     storagemgr_disconnect(db);
     return NULL;
 }
@@ -92,12 +82,12 @@ int main(int argc, char* argv[]) {
     pthread_t storagemgr_thread;
     ASSERT_ELSE_PERROR(pthread_create(&storagemgr_thread, NULL, storagemgr_run, buffer) == 0);
 
+    mgrs(buffer, datamgr_thread, storagemgr_thread);
+
     // main server loop
     connmgr_listen(port_number, buffer);
 
-    sbuffer_lock(buffer);
     sbuffer_close(buffer);
-    sbuffer_unlock(buffer);
 
     pthread_join(datamgr_thread, NULL);
     pthread_join(storagemgr_thread, NULL);
